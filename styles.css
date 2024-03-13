@@ -4,6 +4,7 @@ body {
   background-color: black;
 }
 
+
 /* ***** NAVBAR ***** */
 
 .nav {
@@ -19,9 +20,14 @@ body {
   margin-right: 20px;
 }
 
-.nav-link:hover {
-  color: #2f4d3f;
+.nav a:focus{
+  color:rgba(47, 77, 63, 1);
 }
+
+.nav-link:hover {
+  color: rgba(47, 77, 63, 1);
+}
+
 
 /* ***** HEADER ***** */
 
@@ -44,7 +50,7 @@ video {
 }
 
 .header-text {
-  margin-top: 13%;
+  margin-top: 20%;
   color: white;
 }
 
@@ -52,36 +58,89 @@ video {
   margin-bottom: 30px;
 }
 
+
 /* ***** ABOUT ***** */
 
 .about-container {
-  margin-top: 25%;
-  height: 50%;
+  margin-top: 20%;
+  max-height: 70vh;
 }
 
-p {
+.about-text{
+  font-size: 1.1rem;
+  line-height:2;
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  /* margin-right: 1%; */
+}
+
+.about-container p {
   color: white;
 }
 
 .headshot {
-  height: 16%;
+  height: 20%;
   border-radius: 5px;
+  filter: grayscale(10%);
+  -webkit-filter: grayscale(10%);
+  /* margin-left: 100px; */
   /* border-style: solid;
   border-width: 6px 20px 20px 6px;
   border-color: #2f4d3f; */
 }
 
+.resume-button{
+  margin: 20px 20%;
+  background-color: rgba(47, 77, 63, 1);
+  border: none;
+  color: white;
+  width: 50%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.resume-button:hover{
+  background-color: rgba(47, 77, 63, .8);
+  /* font-weight: 800; */
+}
 
 
+/* ***** PROJECTS ***** */
 
+.project-img{
+  height: 40%;
+  filter: grayscale(70%);
+  -webkit-filter: grayscale(70%);
+}
 
+.card{
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.card:hover > .project-img {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+.btn{
+  background-color: rgba(47, 77, 63, 1);
+  color: white;
+}
+
+.btn:hover{
+  background-color: rgba(47, 77, 63, .8);
+}
 /* ***** RAIN ANIMATION ***** */
-
 rain {
-  min-height: 100vh;
-  /* margin-top: -20vh; */
+  /* min-height: 300vh; */
+  min-width: 100vw;
+  /* margin-top: -200vh; */
   margin: 0;
-  /* position: fixed; */
+  z-index: -100;
   padding: 0;
   box-sizing: border-box;
   background: #000;
@@ -89,6 +148,9 @@ rain {
 }
 
 i {
+  top: 0;
+  /* left: 30px; */
+  z-index: -100;
   position: absolute;
   width: 2px;
   height: 80px;
