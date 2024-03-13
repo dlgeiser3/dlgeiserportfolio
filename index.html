@@ -17,17 +17,23 @@
     <nav>
       <ul class="nav fixed-top justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" href="#about-container">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projects-container">Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
-    <div class="col rain"></div>
+
+    <div class="container rain-container">
+      <div class="row rain-row">
+        <div class="col rain"></div>
+      </div>
+    </div>
+
     <!-- ***** HEADER ***** -->
     <div class="container header-bg">
       <video autoplay muted loop>
@@ -52,8 +58,8 @@
     </div>
 
     <!-- ***** ABOUT ***** -->
-    <div class="container about-container">
-      <div class="row justify-content-around">
+    <div class="container about-container" id="about">
+      <div class="row justify-content-md-center">
         <!-- <div class="col-1"></div> -->
         <div class="col-sm-6 about-photo">
           <img class="headshot" src="assets/Headshot.jpg" alt="Headshot" />
@@ -92,41 +98,104 @@
     </div>
 
     <!-- ***** PROJECTS ***** -->
-    <div class="container text-center projects-container">
-      <div class="row justify-content-center">
-        <!-- <div class="col-1"></div> -->
-        <div class="col-4">
-          <div class="card" style="width: 22rem;">
-            <img src="/assets/pet-groomer.png" class="card-img-top project-img" alt="Pet Groomer Project Image">
+    <div class="container text-center projects-container" id="projects">
+      <div class="row justify-content-between">
+        <div class="col-sm-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="/assets/pet-groomer.png"
+              class="card-img-top project-img"
+              alt="Pet Groomer Project Image"
+            />
             <div class="card-body">
               <h5 class="card-title">Pet Groomer</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn pet-groomer-button">Design File</a>
+              <p class="card-text">
+                Designed for a pet groomer to encourage clients to schedule an appointment, display testimonials with before and after pictures, and show services offered. 
+              </p>
+              <a href="#" class="btn">See Full Design</a>
             </div>
           </div>
         </div>
-          <div class="col-4"> 
-            <div class="card" style="width: 22rem;">
-              <img src="/assets/farmers-market-2.png" class="card-img-top project-img" alt="Farmer's Market Project Image">
-              <div class="card-body">
-                <h5 class="card-title">Farmer's Market</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn farmers-market-button">Design File</a>
-              </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="/assets/farmers-market-2.png"
+              class="card-img-top project-img"
+              alt="Farmer's Market Project Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Farmer's Market</h5>
+              <p class="card-text">
+                Designed to show the business background info, products offered, and location schedule for a vendor selling items via farmer’s markets.
+              </p>
+              <a href="#" class="btn">See Full Design</a>
+            </div>
           </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 22rem">
+            <img
+              src="/assets/kidney-donation-mobile.png"
+              class="card-img-top project-img"
+              alt="Kidney Donation Project Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title" id="card-title">Kidney Donation</h5>
+              <p class="card-text">
+                Designed to give information about kidney donation, including links to medical staff, and to share the story of someone in need of a donation.
+              </p>
+              <a href="#" class="btn">See Full Design</a>
+            </div>
           </div>
-          <div class="col-4">
-            <div class="card" style="width: 22rem;">
-              <img src="/assets/kidney-donation-mobile.png" class="card-img-top project-img" alt="Kidney Donation Project Image">
-              <div class="card-body">
-                <h5 class="card-title">Kidney Donation</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn farmers-market-button">Design File</a>
-              </div>
         </div>
       </div>
-      </div>
+    </div>
 
+    <!-- ***** CONTACT ***** -->
+    <div class="container text-center contact-container" id="contact">
+      <form action="https://formspree.io/f/xwkgqzea" method="POST">
+        <div class="row justify-content-md-center"">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <label>
+              Your email:
+              <br />
+              <input type="email" name="email" class="email-input" />
+            </label>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <label>
+              Your message:
+              <br />
+              <textarea name="message" class="message-text"></textarea>
+            </label>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-5"></div>
+          <div class="col-2">
+            <button type="submit" class="contact-btn">Send</button>
+          </div>
+          <div class="col-5"></div>
+        </div>
+      </form>
+    </div>
+
+    <!-- ***** FOOTER ***** -->
+    <div class="footer-container">
+      <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col">
+          <p>© Danielle Geiser</p>
+        </div>
+      </div>
+    </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

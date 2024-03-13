@@ -1,10 +1,10 @@
 function rain(){
-    let amount = 200;
-    let body = document.querySelector('body');
+    let amount = 500;
+    let body = document.querySelector('.rain');
     let i = 1;
     while(i < amount){
         let drop = document.createElement('i');
-        let size = Math.random() * 5;
+        // let size = Math.random() * 5;
         let posX = Math.floor(Math.random() * window.innerWidth);
         let delay = Math.random() * -20;
         let duration = Math.random() * 5;
