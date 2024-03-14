@@ -99,9 +99,17 @@
 
     <!-- ***** PROJECTS ***** -->
     <div class="container text-center projects-container" id="projects">
-      <div class="row justify-content-between">
+      <div class="row justify-content-center">
+        <div class="col-sm-auto">
+          <h3 class="projects-header">
+            Design Projects
+          </h3>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
         <div class="col-sm-3">
-          <div class="card" style="width: 22rem">
+          <div class="card">
             <img
               src="/assets/pet-groomer.png"
               class="card-img-top project-img"
@@ -110,14 +118,14 @@
             <div class="card-body">
               <h5 class="card-title">Pet Groomer</h5>
               <p class="card-text">
-                Designed for a pet groomer to encourage clients to schedule an appointment, display testimonials with before and after pictures, and show services offered. 
+                Pet grooming client requested a site to encourage clients to make an appointment, display testimonials with before and after photos, and show services offered. 
               </p>
-              <a href="#" class="btn">See Full Design</a>
+              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#pet-groomer-modal">See Full Design</a>
             </div>
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="card" style="width: 22rem">
+          <div class="card">
             <img
               src="/assets/farmers-market-2.png"
               class="card-img-top project-img"
@@ -126,14 +134,14 @@
             <div class="card-body">
               <h5 class="card-title">Farmer's Market</h5>
               <p class="card-text">
-                Designed to show the business background info, products offered, and location schedule for a vendor selling items via farmer’s markets.
+                Designed to show business background info, products offered, and market stall location schedule for a vendor selling items via farmer’s markets.
               </p>
-              <a href="#" class="btn">See Full Design</a>
+              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#farmers-market-modal">See Full Design</a>
             </div>
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="card" style="width: 22rem">
+          <div class="card">
             <img
               src="/assets/kidney-donation-mobile.png"
               class="card-img-top project-img"
@@ -142,19 +150,93 @@
             <div class="card-body">
               <h5 class="card-title" id="card-title">Kidney Donation</h5>
               <p class="card-text">
-                Designed to give information about kidney donation, including links to medical staff, and to share the story of someone in need of a donation.
+                Client requested a site to give information about kidney donation, including links to medical staff, and to share the story of someone in need of a donation.
               </p>
-              <a href="#" class="btn">See Full Design</a>
+              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#kidney-donation-modal">See Full Design</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- * Projects Modals * -->
+
+    
+    <!-- ?Pet Groomer Modal -->
+    <div class="modal fade" id="pet-groomer-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" class="pet-groomer-modal-title">Pet Groomer Website Design</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row justify-content-center">
+                <div class="col-sm-10">
+                  <img src="assets/pet-groomer-design.png" alt="Pet Groomer Website Design">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- ?Farmer's Market Modal -->
+     <div class="modal fade" id="farmers-market-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" class="farmers-market-modal-title">Farmer's Market Website Design</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row justify-content-center">
+                <div class="col-sm-10">
+                  <img src="assets/farmers-market-design.png" alt="Farmer's Market Website Design">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ?Kidney Donation Modal -->
+    <div class="modal fade" id="kidney-donation-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" class="kidney-donation-modal-title">Kidney Donation Mobile Website Design</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row justify-content-center">
+                <div class="col-sm-10">
+                  <img src="assets/kidney-donation-design.png" alt="Kidney Donation Mobile Website Design">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
     <!-- ***** CONTACT ***** -->
     <div class="container text-center contact-container" id="contact">
+      <div class="row justify-content-center">
+        <div class="col-sm-auto">
+          <h3 class="contact-header">
+            Contact Me
+          </h3>
+        </div>
+      </div>
       <form action="https://formspree.io/f/xwkgqzea" method="POST">
-        <div class="row justify-content-md-center"">
+        <div class="row justify-content-md-center">
           <div class="col-2"></div>
           <div class="col-8">
             <label>
@@ -202,6 +284,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="scripts.js"></script>
+    <!-- <script src="scripts.js"></script> -->
   </body>
 </html>
