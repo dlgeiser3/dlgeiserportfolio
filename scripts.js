@@ -1,5 +1,5 @@
 function rain(){
-    let amount = 500;
+    let amount = 300;
     let body = document.querySelector('.rain');
     let i = 1;
     while(i < amount){
